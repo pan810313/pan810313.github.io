@@ -1,0 +1,964 @@
+.banner {
+    background: url(photo/apple-coffee-shop-computer-7107.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 700px;
+
+}
+
+.banner-info {
+    padding: 20em 18em 0;
+    /*text-align: center;*/
+}
+
+.banner-info a {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    font-weight: 700;
+    /*background-color: rgba(65, 139, 202, 0.64);*/
+    padding: 0.4em 1em;
+    width: 0%;
+}
+
+/*.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.bg-warning {
+    background-color: #ffc107!important;
+}
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}*/
+/*.navbar{
+  margin-bottom: 30px;
+}*/
+.navFixed {
+  z-index: 10;          
+  position: fixed;      
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  min-width: 100%;
+  opacity: 0.94;
+  transition: opacity .5s ease-out;   
+}
+.search-box{
+  position: relative;
+  top: 50%;
+  left: 50%
+  transform:translate(-50%, -50%);
+  background:#f5f6fa;
+  height: 50px;
+  border-radius: 40px;
+  padding: 5px;
+
+}
+.search-box:hover > .search-txt{
+  width: 200px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+background: white;
+}
+.search-btn{
+  color: #f1c40f;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+
+}
+.about h1,
+.portfolio h1,
+.contact h1 {
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 1em;
+    font-family: Nunito-Regular;
+    letter-spacing: 1px;
+
+}
+
+.about h3 {
+    color: #fff;
+}
+
+.container {
+    color: black;
+}
+
+.container img {
+    width: 90%;
+}
+
+.about {
+  display: block;
+    background: #e05d6f;
+    padding: 5em 0;
+}
+.about h3{
+  font-style: italic;
+}
+.about ul{
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+
+}
+.portfolio {
+    background: lightblue;
+    padding: 5em 0;
+    text-align: center;
+
+}
+#portfoliolist .portfolio {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 60%;
+  display: none;
+  overflow: hidden;
+  margin: 0.5em 0.5em;
+}
+div#portfoliolist {
+  padding: 0em 0 3em;
+}
+.portfolio-wrapper {
+  overflow:hidden;
+  position: relative !important;
+  cursor:pointer;
+}
+.portfolio img {
+  width:100%;
+  transition: all 300;
+  -webkit-transition: all 300;
+  -moz-transition: all 300;
+}
+
+.contact {
+    background-image: url(photo/sebastien.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 700px;
+    padding: 5em 0;
+    margin: 0 0 2em;
+    background-position: center;
+}
+
+#contact-image{
+    animation: slide-in-bck-top 2s ease-in-out 2s forwards;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+i.add {
+    width: 17px;
+    height: 24px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -3px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.footer-left li {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.8em;
+}
+
+.footer-left li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+i.phone {
+    width: 19px;
+    height: 21px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -5px -31px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+i.mail {
+    width: 17px;
+    height: 14px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -68px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    background-color: rgba(10, 10, 10, 0.5);
+    padding: 5em 3.2em;
+    width: 30%;
+    margin: 0 auto 3em;
+}
+
+
+i.facebk {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -115px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.facebk:hover {
+    background: url(photo/img-sprite.png)no-repeat -115px -43px;
+}
+
+i.github {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite2.png)no-repeat -77px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.github:hover {
+    background: url(photo/img-sprite2.png)no-repeat -77px -43px;
+}
+
+.soci ul {
+    padding: 0;
+}
+
+.soci li {
+    display: inline-block;
+    margin: 0 0.1em;
+}
+
+.soci {
+    margin: 2em 0 0;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.hideme
+{
+    opacity:0;
+}
+/*@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { background-color: rgba(34,34,34,1); }
+    to   { background-color: rgba(34,34,34,0); }
+}
+
+@keyframes slide-in-bck-top {
+    0% {
+            transform:translateZ(1200px) scale(3) translateY(-300px);
+            opacity:0;
+         }
+    100%   {
+            transform:translateZ(0) scale(1) translateY(0);
+            opacity:1;
+         }
+}*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/*--responsive-design--*/
+@media (max-width:768px){
+.banner-info a {
+  width: 66%;
+  font-size:1.5em;
+}
+.banner-info {
+  padding: 13.5em 11em 0;
+}
+.banner {
+  min-height: 540px;
+  background: url(photo/apple-coffee-shop-computer-7107.jpg) no-repeat 0px 0px;
+  background-size:cover;
+}
+.about h1, .portfolio h1, .contact h1 {
+  font-size: 3em;
+}
+.about-left,.about-right {
+  float: left;
+  width: 50%;
+}
+.about h3{
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+.about ul{
+  font-size: 20px;
+}
+#portfoliolist .portfolio {
+  width: 60%;
+}
+.portfolio img{
+  width: 70%;
+}
+.contact{
+  min-height: 540px;
+  background: url(photo/sebastien.jpg) no-repeat 0px 0px;
+  background-size:cover;
+  background-position: center;
+}
+.footer-left {
+  width: 50%;
+}
+i.add {
+    width: 17px;
+    height: 24px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -3px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.footer-left li {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.8em;
+}
+
+.footer-left li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+i.phone {
+    width: 19px;
+    height: 21px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -5px -31px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+i.mail {
+    width: 17px;
+    height: 14px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -68px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    background-color: rgba(10, 10, 10, 0.5);
+    padding: 5em 3.2em;
+    width: 50%;
+    margin: 0 auto 3em;
+}
+
+
+i.facebk {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -115px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.facebk:hover {
+    background: url(photo/img-sprite.png)no-repeat -115px -43px;
+}
+
+i.insta {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -77px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.insta:hover {
+    background: url(photo/img-sprite.png)no-repeat -77px -43px;
+}
+
+.soci ul {
+    padding: 0;
+}
+
+.soci li {
+    display: inline-block;
+    margin: 0 0.1em;
+}
+
+.soci {
+    margin: 2em 0 0;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.hideme
+{
+    opacity:0;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+}
+
+/*--responsive-design--*/
+@media (max-width:640px){
+.banner-info a {
+  width: 69%;
+  font-size: 3em;
+}
+.banner {
+  min-height: 500px;
+  background: url(photo/apple-coffee-shop-computer-7107.jpg) no-repeat 0px 0px;
+  background-size:cover;
+}
+.about {
+  padding: 2em 0;
+}
+.about h3{
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+.about ul{
+  font-size: 50px;
+}
+#portfoliolist .portfolio {
+  width: 60%;
+}
+.contact{
+  min-height: 500px;
+  background: url(photo/sebastien.jpg) no-repeat -49px 0px;
+  background-size:cover;
+  background-position: center;
+}
+.footer-left {
+  padding: 2em 2em;
+  width: 60%;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+}
+/*--responsive-design--*/
+@media (min-width: 400px) and (max-width: 500px){
+.banner-info a {
+  width: 84%;
+  font-size: 1em;
+  padding:0.3em 6em;
+  vertical-align: middle;
+}
+.banner-info {
+  padding: 9.8em 0 0;
+}
+.banner {
+  min-height: 375px;
+    background: url(photo/apple-coffee-shop-computer-7107.jpg) no-repeat -49px 0px;
+  background-size:cover;
+}
+
+.about h1, .portfolio h1, .contact h1 {
+  font-size: 2.5em;
+}
+.about .container{
+  background-size: 40%;
+}
+.about h3{
+  padding-top: 10px;
+  font-size: 20px;
+}
+.about ul{
+  font-size: 15px;
+}
+.about-left, .about-right {
+  float: none;
+  width: 100%;
+}
+
+#portfoliolist .portfolio {
+  width: 46.7%;
+}
+.portfolio img{
+  width: 40%;
+}
+div#portfoliolist {
+  padding: 0em 0 0em;
+}
+.contact{
+  min-height: 375px;
+  background: url(photo/sebastien.jpg) no-repeat 0px 0px;
+  background-size:cover;
+  background-position: center;
+}
+.footer-left {
+  padding: 2em 2em;
+  width: 90%;
+  margin: 0 auto 1em;
+}
+i.add {
+    width: 17px;
+    height: 24px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -3px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.footer-left li {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.8em;
+}
+
+.footer-left li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+i.phone {
+    width: 19px;
+    height: 21px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -5px -31px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+i.mail {
+    width: 17px;
+    height: 14px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -68px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.footer-left {
+    background-color: rgba(10, 10, 10, 0.5);
+    padding: 0em 0em;
+    width: 80%;
+    margin: 0 auto 3em;
+}
+
+
+i.facebk {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -115px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.facebk:hover {
+    background: url(photo/img-sprite.png)no-repeat -115px -43px;
+}
+
+i.insta {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -77px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.insta:hover {
+    background: url(photo/img-sprite.png)no-repeat -77px -43px;
+}
+
+.soci ul {
+    padding: 0;
+}
+
+.soci li {
+    display: inline-block;
+    margin: 0 0.1em;
+}
+
+.soci {
+    margin: 2em 0 0;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.hideme
+{
+    opacity:0;
+}
+
+}
+/*--responsive-design--*/
+@media (min-width: 320px) and (max-width: 400px){
+
+.banner-info a {
+  width: 100%;
+  font-size: 1em;
+  padding:6em 6em;
+  vertical-align: middle;
+
+
+}
+.banner-info a.typewrite {
+
+width: 100%
+
+}
+.banner-info {
+  padding: 7em 0.5em 0;
+}
+.banner {
+  min-height: 285px;
+  background: url(photo/apple-coffee-shop-computer-7107.jpg) no-repeat 0px 0px;
+  background-size:cover;
+}
+.about h1, .portfolio h1, .contact h1 {
+  text-align: center;
+  font-size: 2em;
+    margin: 0 0 0.8em;
+}
+.about h3{
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+
+.about ul{
+  font-size: 1em;
+}
+.about-left, .about-right {
+  padding: 0;
+}
+
+#portfoliolist .portfolio {
+  width: 100%;
+  margin: 0.5em 0;
+}
+.portfolio img{
+  width: 30%;
+}
+.footer-left {
+  padding: 1em 2em;
+  width: 100%;
+  margin: 0 auto 1em;
+}
+.contact{
+  min-height: 285px;
+  background: url(photo/sebastien.jpg) no-repeat -95px 0px;
+  background-size:cover;
+  background-position: center;
+}
+.contact p {
+  font-size: 0.9em;
+}
+#contact-image{
+    animation: slide-in-bck-top 2s ease-in-out 2s forwards;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+i.add {
+    width: 17px;
+    height: 24px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -3px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+.soci {
+  margin: 1em 0 0;
+}
+.footer-left li {
+  font-size: 0.9em;
+}
+.footer-left li {
+    display: block;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.8em;
+}
+
+.footer-left li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+i.phone {
+    width: 19px;
+    height: 21px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -5px -31px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+i.mail {
+    width: 17px;
+    height: 14px;
+    display: inline-block;
+    background: url(photo/spr.png) no-repeat -6px -68px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+i.facebk {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -115px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.facebk:hover {
+    background: url(photo/img-sprite.png)no-repeat -115px -43px;
+}
+
+i.insta {
+    width: 34px;
+    height: 34px;
+    background: url(photo/img-sprite.png)no-repeat -77px 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+i.insta:hover {
+    background: url(photo/img-sprite.png)no-repeat -77px -43px;
+}
+
+.soci ul {
+    padding: 0;
+}
+
+.soci li {
+    display: inline-block;
+    margin: 0 0.1em;
+}
+
+.soci {
+    margin: 2em 0 0;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.hideme
+{
+    opacity:0;
+}
+}
+* {
+    text-decoration: none;
+}
